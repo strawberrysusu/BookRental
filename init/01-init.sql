@@ -1,18 +1,23 @@
-CREATE DATABASE IF NOT EXISTS daelim DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS library DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE daelim;
+USE library;
 
-CREATE TABLE IF NOT EXISTS MEMBER (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    EMAIL VARCHAR(255) NOT NULL,
-    PASSWORD VARCHAR(100) NOT NULL,
-    NAME VARCHAR(100) NOT NULL,
-    REGDATE DATETIME NOT NULL,
-    UNIQUE KEY UK_MEMBER_EMAIL (EMAIL)
+CREATE TABLE IF NOT EXISTS TB_ADMIN_ACCOUNT
+(
+    no       int auto_increment,
+    approval int default 0 not null,
+    id       varchar(20)   not null,
+    password varchar(100)  not null,
+    name     varchar(20)   not null,
+    gender   char          not null,
+    part     varchar(20)   not null,
+    position varchar(20)   not null,
+    email    varchar(50)   not null,
+    phone    varchar(20)   not null,
+    regDate  datetime      null,
+    modDate  datetime      null,
+    constraint TB_ADMIN_ACCOUNT_pk
+        primary key (no),
+    constraint TB_ADMIN_ACCOUNT_id_uq
+        unique (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO MEMBER (EMAIL, PASSWORD, NAME, REGDATE)
-SELECT 'a@a.com', '1234', 'AAA', NOW()
-WHERE NOT EXISTS (
-    SELECT 1 FROM MEMBER WHERE EMAIL = 'a@a.com'
-);

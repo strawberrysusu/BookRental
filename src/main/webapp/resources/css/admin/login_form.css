@@ -1,0 +1,22 @@
+.login_form input {
+    width: 320px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+.login_form input[type="button"],
+.login_form input[type="reset"] {
+    width: 154px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #777;
+}
+
+.find_password_create_account {
+    margin-top: 20px;
+}
+
+.find_password_create_account a {
+    margin: 0 8px;
+}

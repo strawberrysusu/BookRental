@@ -1,0 +1,19 @@
+.create_account_form input,
+.create_account_form select {
+    width: 360px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+.create_account_form input[type="button"],
+.create_account_form input[type="reset"] {
+    width: 174px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #777;
+}
+
+.login {
+    margin-top: 20px;
+}

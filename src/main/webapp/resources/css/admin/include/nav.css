@@ -1,0 +1,31 @@
+nav {
+    border-bottom: 1px solid #eee;
+}
+
+#nav_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+#nav_wrap .menu ul {
+    display: flex;
+    gap: 14px;
+}
+
+#nav_wrap .search input[type="text"] {
+    width: 310px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#nav_wrap .search input[type="button"] {
+    padding: 8px 12px;
+    border: 1px solid #777;
+    background: #fff;
+    cursor: pointer;
+}

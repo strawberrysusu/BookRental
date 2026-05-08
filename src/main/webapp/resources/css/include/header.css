@@ -1,0 +1,20 @@
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#header_wrap .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+#header_wrap .title {
+    text-align: center;
+}

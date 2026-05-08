@@ -1,0 +1,10 @@
+.others {
+    margin-top: 20px;
+}
+
+.others a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 8px 12px;
+    border: 1px solid #777;
+}

@@ -1,0 +1,12 @@
+footer {
+    border-top: 1px solid #ddd;
+}
+
+#footer_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
